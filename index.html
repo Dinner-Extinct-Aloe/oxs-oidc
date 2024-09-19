@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html data-kantu="1"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>OIDC Demo SPA (INT)</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./all.min.css">
+    <script type="text/javascript" src="./oidc-client.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+</head>
+
+<body cz-shortcut-listen="true">
+    <div id="navbar" class="navbar">
+        <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/4/4e/Logo_Thales.svg/langfr-280px-Logo_Thales.svg.png" class="logo" alt="" srcset="">
+        <div class="login" id="login">
+            <button id="login-button" class="button public">Login</button>
+            <button style="display:none;" id="register-button" class="button public">Register</button>
+            <button style="display:none;" id="password-button" class="button public">Reset Password</button>
+            <div id="firstname" class="firstname hidden protected"></div>
+            <button id="logout-button" class="button hidden protected" onclick="logout ()">Logout</button>
+        </div>
+    </div>
+    <div class="main-container" id="main-container">
+        <div id="index" class="index public">
+            <div id="landing" class="landing">
+                <div class="title">Welcome to the OIDC Demo App (INT)</div>
+                <div class="message">This demo application will let you test the user authentication journey
+                </div>
+            </div>
+        </div>
+        <div id="home" class="home hidden protected message">
+          <div id="token" class="landing">
+                <div class="token">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-container hidden" id="error-container">
+        <div id="error" class="unauthorized">
+            User not authorized.
+        </div>
+    </div>
+
+    <div id="wait-div" class="wait-div hidden">
+        <div id="spinner" class="spinner">
+            <i class="fa-solid fa-circle-notch fa-spin fa-8x"></i>
+        </div>
+    </div>
+</body></html>
