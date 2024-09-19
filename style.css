@@ -1,0 +1,181 @@
+html,
+body {
+  font-family: Shell Futura, Futura, Arial, sans-serif;
+  margin: 0px;
+  height: 100vh;
+  padding: 0px;
+  color: #595959;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  gap: 15px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #fefefe;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  height: 50px;
+}
+
+.main-container {
+  display: flex;
+  height: 100%;
+}
+
+.index {
+  background-image: url("https://intranet.peopleonline.corp.thales/publications/news/22081/Teams_BG_rev07_800x450.jpg");
+  /* background-image: url("https://www.thalesgroup.com/themes/custom/thalesgroup/img/thumbnail-default.webp");
+  */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.home {
+  background-image: url("https://intranet.peopleonline.corp.thales/publications/news/22081/Teams_BG_rev07_800x450.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  padding: 100px;
+}
+
+.unauthorized {
+  display: flex;
+  width: 100%;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin: 20px;
+  padding: 20px;
+  color: rgba(187, 4, 4, 0.849);
+  border-radius: 5px;
+  border: solid 1px lightgray;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 2.5rem;
+}
+
+.content {
+  width: 100%;
+  background-color: white;
+  padding: 15px;
+}
+
+.divider {
+  width: 100%;
+  margin-bottom: 15px;
+  border: solid 1px rgb(222, 222, 222);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: solid 1px lightgray;
+  margin: 0px 10px 10px 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.393) 0px 7px 29px 0px;
+  background-color: white;
+  width: 95%;
+}
+
+.card-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-size: 1rem;
+}
+
+.landing {
+  color: white;
+  position: relative;
+  top: 30%;
+  left: 10%;
+  width: 550px;
+}
+
+.landing .title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.landing .message {
+  margin-top: 30px;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.button {
+  width: 114px;
+  height: 48px;
+  background-image: linear-gradient(
+    to right,
+    #3200E6,
+    #3200E6 67%,
+    #3200E6 84%,
+    #3200E6
+  );
+  border-radius: 4px;
+  color: #fff;
+  text-transform: uppercase;
+  border: unset;
+  transition: opacity 0.1s linear;
+  text-align: center;
+  cursor: pointer;
+}
+
+.login {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.wait-div {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.603);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner {
+  color: grey;
+}
+.hidden {
+  display: none;
+}
