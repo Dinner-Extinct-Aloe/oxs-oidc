@@ -5,6 +5,7 @@
     <title>OIDC Demo SPA (INT)</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script type="text/javascript" src="./oidc-client.js"></script>
     <script type="text/javascript" src="./main.js"></script>
 </head>
@@ -23,14 +24,18 @@
     <div class="main-container" id="main-container">
         <div id="index" class="index public">
             <div id="landing" class="landing">
-                <div class="title">Welcome to the OIDC Demo App (INT)</div>
+                <div class="title">Welcome to the OneAccess OIDC Demo App <span class="env">INT</span></div>
                 <div class="message">This demo application will let you test the user authentication journey
                 </div>
             </div>
         </div>
         <div id="home" class="home hidden protected message">
-          <div id="token" class="landing">
-                <div class="token">
+            <div class="landing">
+                <div class="title">You are now connected <span class="env">INT</span></div>
+                <div class="message">You are authenticated with this token:
+                </div>
+                <div id="token">
+                    <div class="token"></div>
                 </div>
             </div>
         </div>

@@ -32,9 +32,7 @@ body {
 }
 
 .index {
-  background-image: url("https://intranet.peopleonline.corp.thales/publications/news/22081/Teams_BG_rev07_800x450.jpg");
-  /* background-image: url("https://www.thalesgroup.com/themes/custom/thalesgroup/img/thumbnail-default.webp");
-  */
+  background-image: url("https://www.thalesgroup.com/themes/custom/thalesgroup/img/thumbnail-default.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -42,14 +40,16 @@ body {
 }
 
 .home {
-  background-image: url("https://intranet.peopleonline.corp.thales/publications/news/22081/Teams_BG_rev07_800x450.jpg");
+  background-image: url("https://www.thalesgroup.com/themes/custom/thalesgroup/img/thumbnail-default.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   width: 100%;
+  /*
   display: flex;
   gap: 30px;
   padding: 100px;
+  */
 }
 
 .unauthorized {
@@ -114,14 +114,17 @@ body {
 }
 
 .landing {
-  color: white;
   position: relative;
   top: 30%;
   left: 10%;
-  width: 550px;
+  width: 600px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1em;
+  border-radius: 0.3em;
 }
 
 .landing .title {
+  color: #5DBFD4;
   font-size: 2.5rem;
   font-weight: bold;
 }
@@ -130,11 +133,30 @@ body {
   margin-top: 30px;
   font-size: 1.2rem;
   margin-bottom: 30px;
+  color: #242A75;
+}
+.landing .env {
+    background-color: #5DBFD4;
+    color: white;
+    border-radius: .2em;
+    padding: 0 0.2em;
+}
+
+.protected #token {
+    display: block;
+    font-family: monospace;
+    margin: 1em 0;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
 }
 
 .button {
   width: 114px;
   height: 48px;
+  /*
   background-image: linear-gradient(
     to right,
     #3200E6,
@@ -142,6 +164,8 @@ body {
     #3200E6 84%,
     #3200E6
   );
+  */
+  background-color: #242A75;
   border-radius: 4px;
   color: #fff;
   text-transform: uppercase;

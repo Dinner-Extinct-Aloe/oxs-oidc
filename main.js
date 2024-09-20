@@ -71,7 +71,8 @@ function password() {
 
 function logout() {
     console.log("Logout");
-    oidcClient.logoutWithRedirect();
+    //oidcClient.logoutWithRedirect();
+    oidcClient.logout();
 }
 
 function updateUI() {
@@ -79,7 +80,7 @@ function updateUI() {
     if (oidcClient.isUserAuthenticated) {
         console.log("not authenticated")
         document.getElementById("firstname").innerText = getName();
-        document.getElementById("token").innerText = JSON.stringify(oidcClient.getOidcClaims());
+        document.getElementById("token").innerText = JSON.stringify(oidcClient.getOidcClaims(),null,2);
         displayAuthUserElements();
     } else {
         console.log("authenticated")
