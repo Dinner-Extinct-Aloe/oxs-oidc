@@ -1,11 +1,11 @@
 let config = {
-    azServerUrl: "https://hub-mtls.auth-int.thalesgroup.com",
+    azServerUrl: "https://hub-mtls.auth.thalesgroup.com",
     tokenEndpoint: "/as/token.oauth2",
     azEndpoint: "/as/authorization.oauth2",
     logoutEndpoint: "/idp/startSLO.ping",
-    clientId: "oidc_az_code_p03_opaque",
-    clientSecret: "oidc_az_code_p03_opaque_secret",
-    redirectUri: "https://oxs-oidc-int.glitch.me/"
+    clientId: "oneaccess.work",
+    clientSecret: "Animal1-Sleet-Turbofan",
+    redirectUri: "https://oneaccess.work/"
 }
 
 const oidcClient = createClient(config);
