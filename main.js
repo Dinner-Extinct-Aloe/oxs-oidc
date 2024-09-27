@@ -81,6 +81,7 @@ function updateUI() {
         console.log("not authenticated")
         document.getElementById("firstname").innerText = getName();
         document.getElementById("token").innerText = JSON.stringify(oidcClient.getOidcClaims(),null,2);
+        document.getElementById("tgi").innerText = oidcClient.getOidcClaims().sub;
         displayAuthUserElements();
     } else {
         console.log("authenticated")

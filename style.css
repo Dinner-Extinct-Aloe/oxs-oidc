@@ -135,11 +135,17 @@ body {
   margin-bottom: 30px;
   color: #242A75;
 }
-.landing .env {
-    background-color: #5DBFD4;
-    color: white;
-    border-radius: .2em;
-    padding: 0 0.2em;
+.env {
+  background-color: #FFA300;
+  color: white;
+  border-radius: .3em;
+  padding: 0.2em 0.5em;
+  display: block;
+  right: -1em;
+  top: -1em;
+  position: absolute;
+  float: right;
+  font-size: xx-large;
 }
 
 .protected #token {
