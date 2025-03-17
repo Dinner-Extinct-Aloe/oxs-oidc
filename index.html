@@ -2,11 +2,11 @@
 <html data-kantu="1"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>OneAccess (OIDC) Demo</title>
+    <title>OneAccess (OIDC) Demo (PROD STRONG)</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" href="./favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="icon" href="https://www.thalesgroup.com/sites/default/files/favicon_0.ico" type="image/vnd.microsoft.icon">
     <script type="text/javascript" src="./oidc-client.js"></script>
     <script type="text/javascript" src="./main.js"></script>
 </head>
@@ -25,14 +25,21 @@
     <div class="main-container" id="main-container">
         <div id="index" class="index public">
             <div id="landing" class="landing">
-                <div class="title">Welcome to the OneAccess (OIDC) Demo</div>
-                <div class="message">This demo application will let you test the user authentication journey
+                <div class="env">PROD STRONG</div>
+                <div class="title">Welcome to the OneAccess OIDC Demo App</div>
+                <div class="message">This demo application will let you test the strong Auth user authentication journey
                 </div>
             </div>
         </div>
         <div id="home" class="home hidden protected message">
             <div class="landing">
+                <div class="env">PROD STRONG</div>
                 <div class="title">You are now connected as <span id="tgi"></span></div>
+                <div class="message">You are authenticated with this token:
+                </div>
+                <div id="token">
+                    <div class="token"></div>
+                </div>
             </div>
         </div>
     </div>

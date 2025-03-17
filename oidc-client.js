@@ -31,7 +31,7 @@ class OIDCClient {
     }
 
     logoutWithRedirect() {
-        console.log("oauthLogout");
+        console.log("SLO Logout");
         let queryStringParams = {
             //post_logout_redirect_uri: this.config.redirectUri
           TargetResource: this.config.redirectUri
@@ -42,6 +42,12 @@ class OIDCClient {
         this.clearLocalStorageData();
     }
 
+    logout() {
+        console.log("Logout");
+        window.location.replace(this.config.redirectUri);
+        this.clearLocalStorageData();
+    }
+    
     async handleRedirectBack() {
         const codeMatch = window.location.href.match('[?#&]code=([^&]*)');
         if (codeMatch && codeMatch[1]) {
